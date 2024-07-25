@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> 
+    </head>
+
+<body>
+    <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="img/eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="Blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>Our courses</h1>
+    </section>  
+    <!-- ------------courses--------  -->
+    <section class="course">
+        <h1> Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nemo commodi deserunt! Laboriosam sunt debitis autem odit deleniti facere id hic vitae quisquam itaque voluptatibus qui, possimus pariatur corrupti. Nobis.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga distinctio, assumenda neque ipsam quidem perspiciatis cumque quo perferendis, adipisci mollitia ipsa, eius nobis deleniti enim odit. Minima, sequi labore?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga distinctio, assumenda neque ipsam quidem perspiciatis cumque quo perferendis, adipisci mollitia ipsa, eius nobis deleniti enim odit. Minima, sequi labore?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga distinctio, assumenda neque ipsam quidem perspiciatis cumque quo perferendis, adipisci mollitia ipsa, eius nobis deleniti enim odit. Minima, sequi labore?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------Facilities-------- -->
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>lorem ipsecy hvytyv hjfrfgb  ub ufv jftyv.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/eduford_img/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aut possimus cum soluta voluptatum cupiditate excepturi reiciendis fugit, assumenda eos placeat cumque saepe perspiciatis quos quisquam eligendi dolorem vitae veritatis?</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/eduford_img/basketball.png">
+                <h3>Basketball</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aut possimus cum soluta voluptatum cupiditate excepturi reiciendis fugit, assumenda eos placeat cumque saepe perspiciatis quos quisquam eligendi dolorem vitae veritatis?</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/eduford_img/cafeteria.png">
+                <h3>Tasty Food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aut possimus cum soluta voluptatum cupiditate excepturi reiciendis fugit, assumenda eos placeat cumque saepe perspiciatis quos quisquam eligendi dolorem vitae veritatis?</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- ----------Footer--------- -->
+<section  class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, minus perspiciatis dolorem accusamus <br>nobis deleniti tempora obcaecati delectus expedita quia culpa quibusdam nemo repudiandae soluta laboriosam voluptates velit numquam nostrum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<script src="school.js">
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

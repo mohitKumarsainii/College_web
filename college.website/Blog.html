@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> 
+    </head>
+
+<body>
+    <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="img/eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="Blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            </ul>
+    </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>Our Certificate and Online Programs For 2024</h1>
+    </section>  
+    <!-- -----------blog page content------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/eduford_img/certificate.jpg">
+                <h2>Our Certificate and Online Programs For 2024</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quas dignissimos vel facere excepturi earum ducimus asperiores, adipisci provident atque natus soluta, doloribus repellendus porro deleniti aut at ipsam temporibus.</p>
+                <br>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi, nemo dolorem quam, eaque sint praesentium, voluptatem reiciendis eius eos quidem soluta velit tempora quis perspiciatis voluptatibus ut! Aliquid, deserunt.</P>
+                <br>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aperiam necessitatibus natus ex vitae fuga sit a. Harum ducimus, ratione est, ab earum vel numquam quo accusamus inventore suscipit sint?</P>
+                <br>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum cumque molestias corrupti et! Laboriosam accusantium pariatur nostrum exercitationem ducimus, quisquam amet quo iure quam saepe! Iste nam placeat praesentium.</P>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Bussiness Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Datz Seciens</span>
+                    <span>26</span>
+                </div>
+                <div>
+                    <span>Machine Learing</span>
+                    <span>79</span>
+                </div>
+                <div>
+                    <span>physics</span>
+                    <span>48</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- ----------Footer--------- -->
+<section  class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, minus perspiciatis dolorem accusamus <br>nobis deleniti tempora obcaecati delectus expedita quia culpa quibusdam nemo repudiandae soluta laboriosam voluptates velit numquam nostrum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<script src="school.js">
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
