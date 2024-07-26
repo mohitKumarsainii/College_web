@@ -1,5 +1,7 @@
 # College Website Project 
 
+https://github.com/user-attachments/assets/14b93545-4b13-47c1-aa2e-cec31c28dc34
+
 ## Overview
 This project is a comprehensive website for a college, featuring various pages including the home page, about page, courses page, blog page, and contact page. The site utilizes HTML for structure, CSS for styling, JavaScript for interactivity, and PHP for form handling.
 
@@ -81,3 +83,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ## Contact
 For any questions or support, please contact 8094543894.
+
+
